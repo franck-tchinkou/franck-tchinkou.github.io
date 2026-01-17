@@ -1,77 +1,39 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-
-  <!-- Lien vers le fichier CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-  <h1>Mon Portfolio</h1>
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>À propos</h2>
-  <p>
-    Étudiant / développeur intéressé par la cybersécurité, les objets connectés
-    et le développement logiciel. Ce site présente une sélection de mes projets
-    académiques et personnels.
-  </p>
-</section>
-
 <section id="projects">
   <h2>Projets</h2>
   <div class="projects">
 
-    <div class="card">
+    <div class="project-card">
       <img src="images/phishing.jpg" alt="Phishing" />
-      <div class="card-content">
+      <div class="project-content">
         <h3>Campagne de phishing</h3>
-        <p>Création et analyse d'une campagne de phishing interne afin de sensibiliser les utilisateurs à la cybersécurité.</p>
+        <p>
+          Afin d'aider à la mise en place d'un outil pour le suivi automatisé de campagnes de phishing en interne, j'ai eu l'occasion de réaliser une campagne de phishing qui a permis de tester l'outil tout en sensibilisant l'ensemble de l'entreprise aux bonnes pratiques en matière de cybersécurité.
+        </p>
+        <a href="https://github.com/TON_GITHUB/phishing-project" target="_blank">En découvrir plus</a>
       </div>
-      <a href="https://github.com/TON_GITHUB/phishing-project" target="_blank">Voir sur GitHub</a>
     </div>
 
-    <div class="card">
+    <div class="project-card">
       <img src="images/iot.jpg" alt="IoT" />
-      <div class="card-content">
-        <h3>Détection comportement anormal IoT</h3>
-        <p>Système de détection d'anomalies et notification en cas de comportement suspect d'un objet connecté.</p>
+      <div class="project-content">
+        <h3>Système de détection de comportement anormal pour objet connecté</h3>
+        <p>
+          Lors d'un cours de sécurité des objets connectés, j'ai du réaliser en groupe un système de notification permettant d'être alerté en cas de comportement anormal d'un objet IoT. Cela m'a notamment permis de me sensibiliser sur les différentes techniques de détection d'intrusion.
+        </p>
+        <a href="https://github.com/TON_GITHUB/iot-detection" target="_blank">En découvrir plus</a>
       </div>
-      <a href="https://github.com/TON_GITHUB/iot-detection" target="_blank">Voir sur GitHub</a>
     </div>
 
-    <div class="card">
+    <div class="project-card">
       <img src="images/chess.jpg" alt="Échecs 3D" />
-      <div class="card-content">
-        <h3>Jeu d'échecs 3D</h3>
-        <p>Développement d'un jeu d'échecs 3D en JavaScript avec communication réseau et moteur graphique.</p>
+      <div class="project-content">
+        <h3>Création d'un jeu d'échec 3D</h3>
+        <p>
+          Lors d'un projet de développement Javascript, j'ai eu l'occasion de concevoir un jeu d'échec 3D dans un groupe de 4 personnes qui m'a permis de mieux appréhender l'aspect sécurité et performance des communications réseaux à base de socket ainsi que le fonctionnement des moteurs graphiques 3D tel que OpenGL.
+        </p>
+        <a href="https://github.com/TON_GITHUB/chess-3d" target="_blank">En découvrir plus</a>
       </div>
-      <a href="https://github.com/TON_GITHUB/chess-3d" target="_blank">Voir sur GitHub</a>
     </div>
 
   </div>
 </section>
-
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email : prenom.nom@email.com</p>
-  <a href="https://github.com/TON_GITHUB" target="_blank">Mon GitHub</a>
-</section>
-
-<footer>
-  © 2026 – Mon Portfolio
-</footer>
-
-</body>
-</html>
