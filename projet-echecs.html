@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu d’échecs 3D – Sécurité & Réseaux</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0f14;
+      color: #d1d5db;
+    }
+
+    header {
+      background: linear-gradient(135deg, #050505, #0d1b2a);
+      color: #00f5d4;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0,245,212,0.2);
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 40px;
+    }
+
+    h2, h3 {
+      color: #00f5d4;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .box {
+      background: #111827;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .actions a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00f5d4, #2f6fed);
+      color: #020617;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Franck Loïc</h2>
+  <a href="index.html#projects" style="color:#e0e0e0;">← Retour</a>
+</header>
+
+<section>
+  <h2>Jeu d’échecs 3D (sécurité & réseaux)</h2>
+
+  <p>
+    Projet de développement d’un jeu d’échecs 3D en JavaScript intégrant des
+    communications réseau. Le projet a permis d’étudier les performances,
+    la sécurité applicative et les vulnérabilités potentielles.
+  </p>
+
+  <h3>Objectifs</h3>
+  <ul>
+    <li>Implémentation d’un moteur de jeu 3D</li>
+    <li>Mise en place de communications réseau</li>
+    <li>Analyse des risques et vulnérabilités applicatives</li>
+  </ul>
+
+  <div class="meta">
+    <div class="box">
+      <h3>Technologies</h3>
+      <ul>
+        <li>JavaScript</li>
+        <li>WebSockets</li>
+        <li>OpenGL / WebGL</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Compétences</h3>
+      <ul>
+        <li>Sécurité applicative</li>
+        <li>Réseaux et communications</li>
+        <li>Analyse de vulnérabilités</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="https://github.com/TON_GITHUB/chess-3d/tree/main/pdf" target="_blank">
+      Voir sur GitHub
+    </a>
+    <a href="pdf/projet-echecs.pdf" target="_blank">
+      Documentation PDF
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 – Franck Loïc · Ingénieur cybersécurité
+</footer>
+
+</body>
+</html>
