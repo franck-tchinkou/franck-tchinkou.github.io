@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Franck Loïc – Ingénieur cybersécurité</title>
+
   <style>
     body {
       margin: 0;
@@ -28,7 +29,6 @@
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -42,15 +42,18 @@
     }
 
     h1, h2 {
-      margin-bottom: 10px;
       color: #00f5d4;
     }
 
-    /* PROJETS */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
     }
 
     .card {
@@ -60,12 +63,11 @@
       box-shadow: 0 0 0 1px rgba(0,245,212,0.15), 0 20px 40px rgba(0,0,0,0.6);
       display: flex;
       flex-direction: column;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 0 1px rgba(0,245,212,0.4), 0 30px 60px rgba(0,0,0,0.8);
     }
 
     .card img {
@@ -79,22 +81,17 @@
       flex: 1;
     }
 
-    .card a {
-      margin: 20px;
-      background: linear-gradient(135deg, #00f5d4, #2f6fed);
-      color: #020617;
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    .card-actions {
+      padding: 20px;
     }
 
-    /* CONTACT */
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #2f6fed;
+    .card-actions a {
+      display: block;
+      background: linear-gradient(135deg, #00f5d4, #2f6fed);
+      color: #020617;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
       font-weight: bold;
       text-decoration: none;
     }
@@ -108,12 +105,13 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div>
     <h1>Franck Loïc</h1>
-    <span class="subtitle">Ingénieur cybersécurité</span>
+    <span>Ingénieur cybersécurité</span>
   </div>
   <nav>
     <a href="#about">À propos</a>
@@ -125,7 +123,8 @@
 <section id="about">
   <h2>À propos</h2>
   <p>
-    Ingénieur en cybersécurité passionné par la sécurité offensive et défensive, la protection des systèmes d'information et la détection des menaces. Ce site présente une sélection de mes projets académiques et personnels orientés cybersécurité.
+    Ingénieur en cybersécurité orienté sécurité offensive, détection des menaces,
+    analyse des risques et protection des systèmes d'information.
   </p>
 </section>
 
@@ -134,79 +133,64 @@
 
   <div class="projects">
 
-    <!-- PROJET PHISHING -->
-    <a href="projet-phishing.html" class="card">
-      <img src="images/phishing.jpg" alt="Phishing" />
-      <div class="card-content">
-        <h3>Campagne de phishing (sensibilisation sécurité)</h3>
-        <p>
-          Conception et déploiement d'une campagne de phishing interne visant à
-          évaluer le niveau de vigilance des utilisateurs et renforcer les
-          bonnes pratiques en cybersécurité.
-        </p>
-      </div>
-      <div class="card-actions">
-        <a
-          href="https://github.com/TON_GITHUB/phishing-project/tree/main/pdf"
-          target="_blank"
-          onclick="event.stopPropagation()"
-        >
-          Voir sur GitHub
-        </a>
+    <a href="projet-phishing.html" class="card-link">
+      <div class="card">
+        <img src="images/phishing.jpg" />
+        <div class="card-content">
+          <h3>Campagne de phishing</h3>
+          <p>Sensibilisation et évaluation de la vigilance des utilisateurs.</p>
+        </div>
+        <div class="card-actions">
+          <a href="https://github.com/TON_GITHUB/phishing-project/tree/main/pdf"
+             target="_blank"
+             onclick="event.stopPropagation()">
+            Voir sur GitHub
+          </a>
+        </div>
       </div>
     </a>
 
-    <!-- PROJET IOT -->
-    <a href="projet-iot.html" class="card">
-      <img src="images/iot.jpg" alt="IoT" />
-      <div class="card-content">
-        <h3>Détection d’anomalies sur objets connectés (IoT)</h3>
-        <p>
-          Développement d’un système de détection de comportements anormaux sur
-          des objets connectés avec mécanisme d’alerte en cas d’activité suspecte.
-        </p>
-      </div>
-      <div class="card-actions">
-        <a
-          href="https://github.com/TON_GITHUB/iot-detection/tree/main/pdf"
-          target="_blank"
-          onclick="event.stopPropagation()"
-        >
-          Voir sur GitHub
-        </a>
+    <a href="projet-iot.html" class="card-link">
+      <div class="card">
+        <img src="images/iot.jpg" />
+        <div class="card-content">
+          <h3>Détection d’anomalies IoT</h3>
+          <p>Surveillance et alerte en cas de comportements suspects.</p>
+        </div>
+        <div class="card-actions">
+          <a href="https://github.com/TON_GITHUB/iot-detection/tree/main/pdf"
+             target="_blank"
+             onclick="event.stopPropagation()">
+            Voir sur GitHub
+          </a>
+        </div>
       </div>
     </a>
 
-    <!-- PROJET ECHECS -->
-    <a href="projet-echecs.html" class="card">
-      <img src="images/chess.jpg" alt="Échecs 3D" />
-      <div class="card-content">
-        <h3>Jeu d’échecs 3D (sécurité & réseaux)</h3>
-        <p>
-          Développement d’un jeu d’échecs 3D en JavaScript intégrant des
-          communications réseau sécurisées et l’étude des performances et
-          vulnérabilités applicatives.
-        </p>
-      </div>
-      <div class="card-actions">
-        <a
-          href="https://github.com/TON_GITHUB/chess-3d/tree/main/pdf"
-          target="_blank"
-          onclick="event.stopPropagation()"
-        >
-          Voir sur GitHub
-        </a>
+    <a href="projet-echecs.html" class="card-link">
+      <div class="card">
+        <img src="images/chess.jpg" />
+        <div class="card-content">
+          <h3>Jeu d’échecs 3D</h3>
+          <p>Sécurité applicative et communications réseau.</p>
+        </div>
+        <div class="card-actions">
+          <a href="https://github.com/TON_GITHUB/chess-3d/tree/main/pdf"
+             target="_blank"
+             onclick="event.stopPropagation()">
+            Voir sur GitHub
+          </a>
+        </div>
       </div>
     </a>
 
   </div>
 </section>
 
-
-<section id="contact" class="contact">
+<section id="contact">
   <h2>Contact</h2>
   <p>Email : prenom.nom@email.com</p>
-  <a href="https://github.com/TON_GITHUB" target="_blank">Mon GitHub</a>
+  <a href="https://github.com/TON_GITHUB" target="_blank">GitHub</a>
 </section>
 
 <footer>
