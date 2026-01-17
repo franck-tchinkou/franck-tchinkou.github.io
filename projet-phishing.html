@@ -1,125 +1,191 @@
 <!DOCTYPE html>
+<!-- Déclare le type de document : HTML5 -->
+
 <html lang="fr">
+<!-- Balise racine du document HTML, avec langue française -->
+
 <head>
   <meta charset="UTF-8" />
+  <!-- Définit l'encodage des caractères en UTF-8 (accents, caractères spéciaux) -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Permet un affichage responsive sur mobile et tablette -->
+
   <title>Campagne de phishing</title>
+  <!-- Titre affiché dans l'onglet du navigateur -->
 
   <style>
+    /* ===== STYLE GLOBAL DU SITE ===== */
+
     body {
       margin: 0;
+      /* Supprime les marges par défaut du navigateur */
+
       font-family: 'Segoe UI', Arial, sans-serif;
+      /* Police moderne avec fallback */
+
       background: #0b0f14;
+      /* Couleur de fond sombre */
+
       color: #d1d5db;
+      /* Couleur de texte principale */
     }
 
     header {
       background: linear-gradient(135deg, #050505, #0d1b2a);
+      /* Dégradé sombre pour l’en-tête */
+
       color: #00f5d4;
+      /* Couleur du texte dans le header */
+
       padding: 20px 40px;
+      /* Espacement interne */
+
       display: flex;
+      /* Active le modèle Flexbox */
+
       justify-content: space-between;
-      border-bottom: 1px solid rgba(0,245,212,0.2);
+      /* Sépare le titre et le lien */
     }
 
     section {
       max-width: 900px;
+      /* Largeur maximale du contenu */
+
       margin: auto;
+      /* Centre la section horizontalement */
+
       padding: 60px 40px;
+      /* Espacement intérieur */
     }
 
     h2, h3 {
       color: #00f5d4;
-    }
-
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin: 30px 0;
+      /* Couleur des titres */
     }
 
     .box {
       background: #111827;
+      /* Fond des encadrés */
+
       padding: 20px;
+      /* Espacement interne */
+
       border-radius: 10px;
+      /* Coins arrondis */
+
+      margin-top: 20px;
+      /* Espacement vertical */
     }
 
     .actions a {
       display: inline-block;
-      margin-right: 15px;
-      margin-top: 20px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      background: linear-gradient(135deg, #00f5d4, #2f6fed);
-      color: #020617;
-      text-decoration: none;
-    }
+      /* Permet d’appliquer padding et marges */
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #020617;
-      color: #94a3b8;
+      margin-top: 30px;
+      /* Espace au-dessus du bouton */
+
+      padding: 14px 24px;
+      /* Taille du bouton */
+
+      border-radius: 8px;
+      /* Coins arrondis */
+
+      background: linear-gradient(135deg, #00f5d4, #2f6fed);
+      /* Dégradé du bouton */
+
+      color: #020617;
+      /* Couleur du texte */
+
+      font-weight: bold;
+      /* Texte en gras */
+
+      text-decoration: none;
+      /* Supprime le soulignement du lien */
     }
   </style>
 </head>
 
 <body>
+<!-- Début du contenu visible -->
 
 <header>
+  <!-- En-tête de la page -->
+
   <h2>Franck Loïc</h2>
-  <a href="index.html#projects" style="color:#e0e0e0;">← Retour</a>
+  <!-- Nom ou seection branding -->
+
+  <a href="index.html#projects" style="color:#e0e0e0;">
+    <!-- Lien de retour vers la section projets -->
+    ← Retour
+  </a>
 </header>
 
 <section>
+  <!-- Section principale du contenu -->
+
   <h2>Campagne de phishing</h2>
+  <!-- Titre du projet -->
 
   <p>
     Projet de conception et de déploiement d’une campagne de phishing interne visant
     à mesurer la vigilance des utilisateurs et améliorer la posture de sécurité.
   </p>
+  <!-- Description générale du projet -->
 
-  <h3>Objectifs</h3>
-  <ul>
-    <li>Sensibilisation cybersécurité</li>
-    <li>Analyse du facteur humain</li>
-    <li>Réduction des risques</li>
-  </ul>
+  <div class="box">
+    <!-- Encadré Objectifs -->
 
-  <div class="meta">
-    <div class="box">
-      <h3>Technologies</h3>
-      <ul>
-        <li>Python</li>
-        <li>SMTP / HTTP</li>
-        <li>Emailing</li>
-      </ul>
-    </div>
+    <h3>Objectifs</h3>
+    <!-- Titre de la section -->
 
-    <div class="box">
-      <h3>Compétences</h3>
-      <ul>
-        <li>Ingénierie sociale</li>
-        <li>Cybersécurité offensive</li>
-        <li>Analyse de risques</li>
-      </ul>
-    </div>
+    <ul>
+      <!-- Liste non ordonnée -->
+
+      <li>Sensibilisation cybersécurité</li>
+      <!-- Objectif 1 -->
+
+      <li>Analyse du facteur humain</li>
+      <!-- Objectif 2 -->
+
+      <li>Réduction des risques</li>
+      <!-- Objectif 3 -->
+    </ul>
+  </div>
+
+  <div class="box">
+    <!-- Encadré compétences -->
+
+    <h3>Technologies & compétences</h3>
+    <!-- Titre -->
+
+    <ul>
+      <li>Python, SMTP / HTTP</li>
+      <!-- Langages et protocoles -->
+
+      <li>Ingénierie sociale</li>
+      <!-- Compétence clé phishing -->
+
+      <li>Cybersécurité offensive</li>
+      <!-- Domaine technique -->
+    </ul>
   </div>
 
   <div class="actions">
-    <a href="https://github.com/TON_GITHUB/phishing-project/tree/main/pdf" target="_blank">
-      Voir sur GitHub
-    </a>
+    <!-- Zone d’actions -->
+
     <a href="pdf/projet-phishing.pdf" target="_blank">
+      <!-- Bouton ouvrant la documentation PDF dans un nouvel onglet -->
       Documentation PDF
     </a>
   </div>
 </section>
 
 <footer>
+  <!-- Pied de page -->
+
   © 2026 – Franck Loïc · Ingénieur cybersécurité
+  <!-- Mentions légales / signature -->
 </footer>
 
 </body>
