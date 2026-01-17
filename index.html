@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Détail du projet – Campagne de phishing</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #0b0f14;
       color: #d1d5db;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
@@ -28,75 +28,42 @@
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00f5d4;
     }
 
     section {
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
       padding: 60px 40px;
     }
 
-    h1, h2 {
-      margin-bottom: 10px;
+    h1, h2, h3 {
       color: #00f5d4;
     }
 
-    /* PROJETS */
-    .projects {
+    .meta {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
     }
 
-    .card {
+    .box {
       background: #111827;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 0 1px rgba(0,245,212,0.15), 0 20px 40px rgba(0,0,0,0.6);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 0 1px rgba(0,245,212,0.4), 0 30px 60px rgba(0,0,0,0.8);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .card-content {
       padding: 20px;
-      flex: 1;
+      border-radius: 10px;
+      box-shadow: 0 0 0 1px rgba(0,245,212,0.15);
     }
 
-    .card a {
-      margin: 20px;
-      background: linear-gradient(135deg, #00f5d4, #2f6fed);
-      color: #020617;
-      text-align: center;
-      padding: 12px;
+    .actions a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 20px;
+      padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    /* CONTACT */
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #2f6fed;
-      font-weight: bold;
-      text-decoration: none;
+      background: linear-gradient(135deg, #00f5d4, #2f6fed);
+      color: #020617;
     }
 
     footer {
@@ -111,62 +78,53 @@
 <body>
 
 <header>
-  <div>
-    <h1>Franck Loïc</h1>
-    <span class="subtitle">Ingénieur cybersécurité</span>
-  </div>
+  <h1>Franck Loïc</h1>
   <nav>
-    <a href="#about">À propos</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html#projects">← Retour aux projets</a>
   </nav>
 </header>
 
-<section id="about">
-  <h2>À propos</h2>
+<section>
+  <h2>Campagne de phishing (sensibilisation sécurité)</h2>
+
+  <h3>Présentation du projet</h3>
   <p>
-    Ingénieur en cybersécurité passionné par la sécurité offensive et défensive, la protection des systèmes d'information et la détection des menaces. Ce site présente une sélection de mes projets académiques et personnels orientés cybersécurité.
+    Ce projet consiste en la conception et le déploiement d’une campagne de phishing
+    interne dans un contexte professionnel simulé. L’objectif était d’évaluer le niveau
+    de vigilance des utilisateurs face aux attaques par ingénierie sociale.
   </p>
-</section>
 
-<section id="projects">
-  <h2>Projets</h2>
-  <div class="projects">
+  <h3>Objectifs du projet</h3>
+  <ul>
+    <li>Évaluer la sensibilisation des utilisateurs à la cybersécurité</li>
+    <li>Identifier les comportements à risque</li>
+    <li>Renforcer les bonnes pratiques de sécurité</li>
+  </ul>
 
-    <div class="card">
-      <img src="images/phishing.jpg" alt="Phishing" />
-      <div class="card-content">
-        <h3>Campagne de phishing (sensibilisation sécurité)</h3>
-        <p>Conception et déploiement d'une campagne de phishing interne visant à évaluer le niveau de vigilance des utilisateurs et renforcer les bonnes pratiques en cybersécurité.</p>
-      </div>
-      <a href="https://github.com/TON_GITHUB/phishing-project" target="_blank">Voir sur GitHub</a>
+  <div class="meta">
+    <div class="box">
+      <h3>Technologies</h3>
+      <ul>
+        <li>Python</li>
+        <li>SMTP / HTTP</li>
+        <li>Outils d’emailing</li>
+      </ul>
     </div>
 
-    <div class="card">
-      <img src="images/iot.jpg" alt="IoT" />
-      <div class="card-content">
-        <h3>Détection d’anomalies sur objets connectés (IoT)</h3>
-        <p>Développement d’un système de détection de comportements anormaux sur des objets connectés, avec mécanisme d’alerte en cas d’activité suspecte ou d’intrusion.</p>
-      </div>
-      <a href="https://github.com/TON_GITHUB/iot-detection" target="_blank">Voir sur GitHub</a>
+    <div class="box">
+      <h3>Compétences</h3>
+      <ul>
+        <li>Cybersécurité offensive</li>
+        <li>Ingénierie sociale</li>
+        <li>Analyse de risques</li>
+      </ul>
     </div>
-
-    <div class="card">
-      <img src="images/chess.jpg" alt="Échecs 3D" />
-      <div class="card-content">
-        <h3>Jeu d’échecs 3D (sécurité & réseaux)</h3>
-        <p>Développement d’un jeu d’échecs 3D en JavaScript intégrant des communications réseau sécurisées et l’étude des performances et vulnérabilités applicatives.</p>
-      </div>
-      <a href="https://github.com/TON_GITHUB/chess-3d" target="_blank">Voir sur GitHub</a>
-    </div>
-
   </div>
-</section>
 
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email : prenom.nom@email.com</p>
-  <a href="https://github.com/TON_GITHUB" target="_blank">Mon GitHub</a>
+  <div class="actions">
+    <a href="https://github.com/TON_GITHUB/phishing-project" target="_blank">Voir sur GitHub</a>
+    <a href="pdf/projet-phishing.pdf" target="_blank">Voir la documentation (PDF)</a>
+  </div>
 </section>
 
 <footer>
