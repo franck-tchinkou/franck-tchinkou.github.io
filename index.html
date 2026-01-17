@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<title>Mon Portfolio</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 40px;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    /* PROJETS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .card a {
+      margin: 20px;
+      background: #2f6fed;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #2f6fed;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<h1>Mon Portfolio</h1>
-<p>Bienvenue sur mon portfolio. Je présente ici mes projets et leurs documentations.</p>
 
+<header>
+  <h1>Mon Portfolio</h1>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<a href="projets.html">👉 Voir mes projets</a>
+<section id="about">
+  <h2>À propos</h2>
+  <p>
+    Étudiant / développeur intéressé par la cybersécurité, les objets connectés
+    et le développement logiciel. Ce site présente une sélection de mes projets
+    académiques et personnels.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+  <div class="projects">
+
+    <div class="card">
+      <img src="images/phishing.jpg" alt="Phishing" />
+      <div class="card-content">
+        <h3>Campagne de phishing</h3>
+        <p>Création et analyse d'une campagne de phishing interne afin de sensibiliser les utilisateurs à la cybersécurité.</p>
+      </div>
+      <a href="https://github.com/TON_GITHUB/phishing-project" target="_blank">Voir sur GitHub</a>
+    </div>
+
+    <div class="card">
+      <img src="images/iot.jpg" alt="IoT" />
+      <div class="card-content">
+        <h3>Détection comportement anormal IoT</h3>
+        <p>Système de détection d'anomalies et notification en cas de comportement suspect d'un objet connecté.</p>
+      </div>
+      <a href="https://github.com/TON_GITHUB/iot-detection" target="_blank">Voir sur GitHub</a>
+    </div>
+
+    <div class="card">
+      <img src="images/chess.jpg" alt="Échecs 3D" />
+      <div class="card-content">
+        <h3>Jeu d'échecs 3D</h3>
+        <p>Développement d'un jeu d'échecs 3D en JavaScript avec communication réseau et moteur graphique.</p>
+      </div>
+      <a href="https://github.com/TON_GITHUB/chess-3d" target="_blank">Voir sur GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email : prenom.nom@email.com</p>
+  <a href="https://github.com/TON_GITHUB" target="_blank">Mon GitHub</a>
+</section>
+
+<footer>
+  © 2026 – Mon Portfolio
+</footer>
+
 </body>
 </html>
