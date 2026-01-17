@@ -17,10 +17,10 @@
        =============================== */
 
     body {
-      margin: 0; /* Supprime les marges par défaut du navigateur */
-      font-family: 'Segoe UI', Arial, sans-serif; /* Police lisible et pro */
-      background: #0b0f14; /* Fond sombre style cybersécurité */
-      color: #d1d5db; /* Couleur du texte */
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0f14;
+      color: #d1d5db;
     }
 
     /* ===============================
@@ -28,269 +28,20 @@
        =============================== */
 
     header {
-      background: linear-gradient(135deg, #050505, #0d1b2a); /* Dégradé sombre */
-      color: #00f5d4; /* Couleur cyber (cyan) */
-      padding: 20px 40px; /* Espacement intérieur */
-      display: flex; /* Alignement horizontal */
-      justify-content: space-between; /* Nom à gauche, menu à droite */
-      align-items: center; /* Centrage vertical */
-      border-bottom: 1px solid rgba(0,245,212,0.2); /* Ligne fine */
-    }
-
-    /* Liens du menu */
-    nav a {
-      color: #e0e0e0; /* Couleur claire */
-      margin-left: 20px; /* Espacement entre les liens */
-      text-decoration: none; /* Supprime le soulignement */
-      font-weight: bold; /* Texte en gras */
-    }
-
-    /* ===============================
-       SECTIONS GÉNÉRALES
-       =============================== */
-
-    section {
-      max-width: 1200px; /* Largeur maximale du contenu */
-      margin: auto; /* Centre la section */
-      padding: 60px 40px; /* Espacement intérieur */
-    }
-
-    h1, h2 {
-      color: #00f5d4; /* Titres en cyan */
-    }
-
-    /* ===============================
-       SECTION À PROPOS
-       =============================== */
-
-.about p {
-  font-size: 1.05em; /* Texte légèrement plus grand */
-  line-height: 1.8;  /* Aération du texte */
-}
-
-    }
-
-    /* ===============================
-       SECTION PROJETS
-       =============================== */
-
-    .projects {
-      display: grid; /* Mise en grille */
-      grid-template-columns: repeat(3, 1fr); /* 3 projets sur une ligne */
-      gap: 30px; /* Espacement entre les cartes */
-    }
-
-    /* Carte d’un projet */
-    .card {
-      background: #111827; /* Fond sombre */
-      border-radius: 12px; /* Coins arrondis */
-      overflow: hidden; /* Cache ce qui dépasse */
-      box-shadow: 0 0 0 1px rgba(0,245,212,0.15); /* Effet carte */
+      background: linear-gradient(135deg, #050505, #0d1b2a);
+      color: #00f5d4;
+      padding: 20px 40px;
       display: flex;
-      flex-direction: column; /* Organisation verticale */
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0,245,212,0.2);
     }
 
-    /* Image du projet */
-    .card img {
-      width: 100%; /* Prend toute la largeur */
-      height: 180px; /* Hauteur fixe */
-      object-fit: cover; /* Coupe l’image sans la déformer */
-    }
-
-    /* Contenu texte de la carte */
-    .card-content {
-      padding: 20px;
-      flex: 1; /* Permet aux cartes d’avoir la même hauteur */
-    }
-
-    /* Zone des boutons */
-    .card-actions {
-      display: flex; /* Boutons côte à côte */
-      gap: 10px; /* Espacement entre boutons */
-      padding: 20px;
-    }
-
-    /* Boutons */
-    .card-actions a {
-      flex: 1; /* Les deux boutons ont la même largeur */
-      text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: bold;
+    nav a {
+      color: #e0e0e0;
+      margin-left: 20px;
       text-decoration: none;
-      color: #020617; /* Texte sombre */
-      background: linear-gradient(135deg, #00f5d4, #2f6fed); /* Dégradé */
+      font-weight: bold;
     }
 
-    /* ===============================
-       FOOTER
-       =============================== */
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #020617;
-      color: #94a3b8;
-    }
-
-    /* ===============================
-       RESPONSIVE (PETITS ÉCRANS)
-       =============================== */
-
-    @media (max-width: 900px) {
-      .projects {
-        grid-template-columns: 1fr; /* 1 projet par ligne sur mobile */
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<!-- ===============================
-     HEADER
-     =============================== -->
-<header>
-  <div>
-    <!-- Ton nom -->
-    <h1>Franck Loïc</h1>
-    <!-- Ton rôle -->
-    <span>Ingénieur cybersécurité</span>
-  </div>
-
-  <!-- Menu de navigation -->
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<!-- ===============================
-     SECTION À PROPOS
-     =============================== -->
-<section id="about" class="about">
-  <h2>À propos</h2>
-
-  <p>
-    Ingénieur en cybersécurité passionné par la sécurité offensive et défensive,
-    la protection des systèmes d’information et la détection des menaces.
-    Ce portfolio présente une sélection de projets académiques et personnels
-    illustrant mes compétences techniques et méthodologiques.
-  </p>
-</section>
-
-<!-- ===============================
-     SECTION PROJETS
-     =============================== -->
-<section id="projects">
-  <h2>Projets</h2>
-
-  <div class="projects">
-
-    <!-- ===============================
-         PROJET 1 – PHISHING
-         =============================== -->
-    <div class="card">
-      <img src="images/phishing.jpg" alt="Phishing">
-
-      <div class="card-content">
-        <h3>Campagne de phishing</h3>
-        <p>Sensibilisation et évaluation de la vigilance des utilisateurs.</p>
-      </div>
-
-      <div class="card-actions">
-        <a href="projet-phishing.html">Détails</a>
-        <a href="pdf/projet-phishing.pdf" target="_blank">
-          Documentation PDF
-        </a>
-      </div>
-    </div>
-
-    <!-- ===============================
-         PROJET 2 – IOT
-         =============================== -->
-    <div class="card">
-      <img src="images/iot.jpg" alt="IoT">
-
-      <div class="card-content">
-        <h3>Détection d’anomalies IoT</h3>
-        <p>Surveillance et alerte en cas de comportements suspects.</p>
-      </div>
-
-      <div class="card-actions">
-        <a href="projet-iot.html">Détails</a>
-        <a href="pdf/projet-iot.pdf" target="_blank">
-          Documentation PDF
-        </a>
-      </div>
-    </div>
-
-    <!-- ===============================
-         PROJET 3 – ÉCHECS
-         =============================== -->
-    <div class="card">
-      <img src="images/chess.jpg" alt="Échecs 3D">
-
-      <div class="card-content">
-        <h3>Jeu d’échecs 3D</h3>
-        <p>Sécurité applicative et communications réseau.</p>
-      </div>
-
-      <div class="card-actions">
-        <a href="projet-echecs.html">Détails</a>
-        <a href="pdf/projet-echecs.pdf" target="_blank">
-          Documentation PDF
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ===============================
-     CONTACT
-     =============================== -->
-<section id="contact">
-  <!-- Titre de la section -->
-  <h2>Contact</h2>
-
-  <!-- Adresse email -->
-  <p>
-    <strong>Email :</strong>
-    <a href="mailto:prenom.nom@email.com">
-      prenom.nom@email.com
-    </a>
-  </p>
-
-  <!-- Numéro de téléphone -->
-  <p>
-    <strong>Téléphone :</strong>
-    <a href="tel:+336663409">
-      +33 6 66 34 09
-    </a>
-  </p>
-
-  <!-- Lien LinkedIn -->
-  <p>
-    <strong>LinkedIn :</strong>
-    <a
-      href="https://www.linkedin.com/in/franck-tchinkou-365720387"
-      target="_blank"
-    >
-      www.linkedin.com/in/franck-tchinkou-365720387
-    </a>
-  </p>
-</section>
-
-
-<!-- ===============================
-     FOOTER
-     =============================== -->
-<footer>
-  © 2026 – Franck Loïc · Ingénieur cybersécurité
-</footer>
-
-</body>
-</html>
+    /* ==*
